@@ -4,8 +4,8 @@ const HomeSection = () => {
     return (
         <>
         <section className="primary-bg py-5">
-            <div className="container">
-                <div className="row justify-content-center">
+            <div className="container py-5">
+                <div className="row justify-content-center align-items-center">
                     <div className="col-2">
                         <ul className="list-unstyled">
                             {homeSectionItems.map((item, index) => {
