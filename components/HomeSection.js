@@ -25,8 +25,8 @@ const HomeSection = () => {
                     <div className="col-10">
                         <div className="row position_relative">
                             <div className="col-12">
-                                <img className="img-fluid desktop-mask-image" src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/6290e004f6310f703dde447b_Desktop-p-1600.png" alt=""/>
-                                <img className="img-fluid desktop-screenshot" src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/62988cb4cb60e75de1f44e0d_Desktop%20-%20Wiki-p-1080.jpeg" alt=""/>
+                                <img className="img-fluid desktop-mask" src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/6290e004f6310f703dde447b_Desktop-p-1600.png" alt=""/>
+                                <img className="img-fluid desktop-content" src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/62988cb4cb60e75de1f44e0d_Desktop%20-%20Wiki-p-1080.jpeg" alt=""/>
                             </div>
                             <div className="col-3 phone-container">
                                 <img className="img-fluid phone-mask" src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/6290e0537ef59a9e13f893c0_Mobile-p-500.png" alt=""/>
