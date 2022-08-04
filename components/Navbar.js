@@ -3,7 +3,7 @@ import { menuItems } from '../data/menuItems'
 
 const NavbarMenu = () => {
     return (
-        <nav className="primary-bg shadow-sm py-4">
+        <nav className="primary-bg sticky-top shadow-sm py-4">
                 <div className="container menu-bar-container w-container">
                     <div className="row justify-content-between align-items-center">
                         <div className="col-2">
