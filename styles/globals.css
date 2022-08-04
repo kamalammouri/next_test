@@ -26,6 +26,11 @@ a {
 }
 
 
-.navbar-bg{
+.primary-bg{
   background-color: #f8efe4 !important;
+}
+
+.line-nes{
+  line-height: 1;
+  font-weight: 700;
 }
