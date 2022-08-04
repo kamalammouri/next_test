@@ -1,4 +1,4 @@
-export const haderItems = [
+export const haederItems = [
     {
         title: 'Karl started a discussion',
         description: 'How can we educate teams about remote?',

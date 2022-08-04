@@ -34,3 +34,26 @@ a {
   line-height: 1;
   font-weight: 700;
 }
+
+.headerItems_parent{
+  position: relative;
+  top: -100px;
+}
+
+.headerItems_child{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+
+.position_relative{
+  position: relative !important;
+}
+
+.phone-cadr{
+  position: absolute;
+  right: -25px;
+  top: 130px;
+}

@@ -1,3 +1,4 @@
+import { haederItems } from "../data/headerItems";
 const Header = () => {
     return (
     <header className="primary-bg py-5">
@@ -24,25 +25,33 @@ const Header = () => {
                 <div className="col-12">
                     <img className="img-fluid" src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/627e355dc75c2e90373cb295_Hero%20Visual-p-1600.png" alt=""/>
                 </div>
-                <div className="col-5">
-                    <div className="card-time text-muted text-center py-2">4PM - AEST</div>
-                    <div className="card border-0 shadow-sm">
-                        <div className="card-body row justify-content-around">
-                            <div className="col-3">
-                                <img className="img-fluid" src="https://assets-global.website-files.com/5f84417443f34a30444f52d3/62763800bd539d2c4a8abd09_Group%202.png" alt=""/>
+            </div>
+            <div className="d-flex flex-column justify-content-center py-5 headerItems_parent">
+                {
+                haederItems.map((item, index) => {
+                return (
+                    <div className="col-5 m-auto headerItems_child" key={index}>
+                        <div className="card-time text-muted text-center py-2 primary-bg">{item.time}</div>
+                        <div className="card border-0 shadow-sm">
+                            <div className="card-body row justify-content-around">
+                        <div className="col-3">
+                            <img className="img-fluid" src={item.image} alt=""/>
+                        </div>
+                        <div className="col-8 d-flex flex-column justify-content-center">
+                            <h5 className="card-title">
+                                {item.title}
+                            </h5>
+                            <div className="card-text">
+                                <p className="text-muted">{item.description}</p>
                             </div>
-                            <div className="col-8 d-flex flex-column justify-content-center">
-                                <h5 className="card-title">
-                                    Lily made a decision
-                                </h5>
-                                <div className="card-text">
-                                    <p className="text-muted">Let’s publish a guidebook about remote</p>
-                                </div>
+                        </div>
                             </div>
                         </div>
                     </div>
-                </div>    
-            </div>
+                )
+                })
+                }
+            </div> 
         </div>
     </header>
     );
