@@ -4,11 +4,12 @@ import { homeSectionItems } from "../data/homeSectionItems";
 const HomeSection = () => {
     const [pcImage, setPcImage] = useState(homeSectionItems[0].image);
     const [mobileImage, setMobileImage] = useState(homeSectionItems[0].subimage);
-
+    const [activeItem, setActive] = useState(homeSectionItems[0]);
 
     const selectedItem = (item) => {
         setPcImage(item.image);
         setMobileImage(item.subimage);
+        setActive(item);
     };
     return (
         <>
@@ -20,7 +21,7 @@ const HomeSection = () => {
                             {homeSectionItems.map((item,index) => {
                                 return (
                                     <>
-                                    <li className="list-item p-1 my-3" key={index} onClick={()=>{selectedItem(item)}}>
+                                    <li className={activeItem == item ? "list-item p-3 my-3 cursor-pointer rounded activeClass" : "list-item p-3 my-3 cursor-pointer rounded"} key={index} onClick={()=>{selectedItem(item)}}>
                                         <span className="text-muted">{item.label}</span>
                                     </li>
                                     </>
