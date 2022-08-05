@@ -43,6 +43,24 @@ const HomeSection = () => {
                         </div>
                     </div>
                 </div>
+                <div className="row justify-content-center align-items-center mt-5">
+                    <div className="col-12">
+                        <h1 className="display-5 text-center">
+                        <strong>
+                            <div className="text-nowrap line-nes">All of your documents in one place.</div> 
+                        </strong>
+                        </h1>
+                        <p className="text-center my-3">
+                            Project, knowledge base, process, bring all your work to life in Docs.
+                        </p>
+                    </div>
+                    <div className="col-12">
+                        <div className="d-flex justify-content-center align-items-center">
+                        <button className="btn btn-primary btn-lg btn-block rounded-pill m-2 px-4">Get Started</button>
+                        <button className="btn btn-outline-dark btn-lg btn-block rounded-pill m-2 px-4">Download the apps</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         </>
