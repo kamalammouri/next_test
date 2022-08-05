@@ -28,9 +28,9 @@ const NavbarMenu = () => {
                                     {items.title}
                                 </a>
                                 <ul className="dropdown-menu">
-                                    {items.submenu.map((subitems, index) => {
+                                    {items.submenu.map((subitems, _index) => {
                                         return (
-                                            <li className="dropdown-item" key={index}>
+                                            <li className="dropdown-item" key={_index}>
                                             <Link href={subitems.title}>
                                                 <a className="nav-link">{subitems.title}</a>
                                             </Link>

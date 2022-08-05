@@ -1,5 +1,6 @@
 import Header from '../components/header'
 import HomeSection from '../components/HomeSection'
+import ReviewSection from '../components/reviewSection'
 
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
   <>
     <Header/>
     <HomeSection/>
+    <ReviewSection/>
   </>
   )
 }

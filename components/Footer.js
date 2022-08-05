@@ -17,10 +17,10 @@ const Footer = () => {
                                                     <h6 className="text-uppercase mb-3">{menu.title}</h6>
                                                     <ul className="list-unstyled">
                                                         {
-                                                            menu.items.map((item, index) =>
+                                                            menu.items.map((item, _index) =>
                                                             {
                                                                 return(
-                                                                    <li className="m-1" key={index}>
+                                                                    <li className="m-1" key={_index}>
                                                                         <a className="nav-link text-muted" href="#">{item.title} {item.subtitle ? <span className="badge rounded-pill text-bg-warning">{item.subtitle}</span> : null}</a> 
                                                                     </li>
                                                                 )
